@@ -2,6 +2,7 @@ package project.webapp.model;
 
 import project.webapp.unil.DateUtil;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.time.Month;
 import java.util.ArrayList;
@@ -9,7 +10,9 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
 
-public class Experience {
+public class Experience implements Serializable {
+    private static final long serialVersionUID = 1L;
+
     private final Link homePage;
     private List<Position> positions = new ArrayList<>();
 
@@ -27,7 +30,9 @@ public class Experience {
         return "Experience{" + homePage + " , " + positions + '}';
     }
 
-    public static class Position {
+    public static class Position implements Serializable {
+        private static final long serialVersionUID = 1L;
+
         private final String title;
         private final LocalDate startDate;
         private final LocalDate endDate;

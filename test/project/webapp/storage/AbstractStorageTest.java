@@ -1,19 +1,25 @@
 package project.webapp.storage;
 
-import project.webapp.exception.ExistStorageException;
-import project.webapp.exception.NotExistStorageException;
-import project.webapp.model.*;
+
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
+import project.webapp.exception.ExistStorageException;
+import project.webapp.exception.NotExistStorageException;
+import project.webapp.model.*;
 
+import java.io.File;
 import java.time.Month;
 import java.util.Arrays;
 import java.util.List;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertSame;
 
 public abstract class AbstractStorageTest {
+
+    protected static final File STORAGE_DIR = new File("C:\\projects\\storage");
+
     protected Storage storage;
     private static final String UUID_1 = "uuid1";
     private static final String UUID_2 = "uuid2";
