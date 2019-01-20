@@ -1,5 +1,6 @@
 package project.webapp.storage;
 
+import project.webapp.exception.StorageException;
 import project.webapp.model.Resume;
 
 import java.io.*;
@@ -13,12 +14,15 @@ public class ObjectStreamStorage extends AbstractFileStorage {
     protected void doWrite(Resume resume, OutputStream os) throws IOException {
         try (ObjectOutputStream oos = new ObjectOutputStream(os)) {
             oos.writeObject(resume);
-
         }
     }
 
     @Override
     protected Resume doRead(InputStream is) throws IOException {
-        return null;
+        try (ObjectInputStream ois = new ObjectInputStream(is)) {
+            return (Resume) ois.readObject();
+        } catch (ClassNotFoundException e) {
+            throw new StorageException("Error read resume", null, e);
+        }
     }
 }
