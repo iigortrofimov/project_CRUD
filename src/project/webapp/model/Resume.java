@@ -5,16 +5,13 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.UUID;
 
-/**
- * Initial resume class
- */
 public class Resume implements Comparable<Resume> {
 
     // Unique identifier
     private final String uuid;
     private final String fullName;
-    private final Map<ContactType, String> contact = new EnumMap<>(ContactType.class);
-    private final Map<SectionType, Section> section = new EnumMap<>(SectionType.class);
+    private final Map<ContactType, String> contacts = new EnumMap<>(ContactType.class);
+    private final Map<SectionType, Section> sections = new EnumMap<>(SectionType.class);
 
     public Resume(String fullName) {
         this(UUID.randomUUID().toString(), fullName);
@@ -35,12 +32,20 @@ public class Resume implements Comparable<Resume> {
         return fullName;
     }
 
-    public Map<ContactType, String> getContact() {
-        return contact;
+    public String getContact(ContactType type) {
+        return contacts.get(type);
     }
 
-    public Map<SectionType, Section> getSection() {
-        return section;
+    public Section getSection(SectionType type) {
+        return sections.get(type);
+    }
+
+    public void addContact(ContactType type, String value) {
+        contacts.put(type, value);
+    }
+
+    public void addSection(SectionType type, Section section) {
+        sections.put(type, section);
     }
 
     @Override
@@ -52,16 +57,16 @@ public class Resume implements Comparable<Resume> {
 
         if (!uuid.equals(resume.uuid)) return false;
         if (!fullName.equals(resume.fullName)) return false;
-        if (!contact.equals(resume.contact)) return false;
-        return section.equals(resume.section);
+        if (!contacts.equals(resume.contacts)) return false;
+        return sections.equals(resume.sections);
     }
 
     @Override
     public int hashCode() {
         int result = uuid.hashCode();
         result = 31 * result + fullName.hashCode();
-        result = 31 * result + contact.hashCode();
-        result = 31 * result + section.hashCode();
+        result = 31 * result + contacts.hashCode();
+        result = 31 * result + sections.hashCode();
         return result;
     }
 
@@ -70,8 +75,8 @@ public class Resume implements Comparable<Resume> {
         return "Resume{" +
                 "uuid='" + uuid + '\'' +
                 ", fullName='" + fullName + '\'' +
-                ", contact=" + contact +
-                ", section=" + section +
+                ", contacts=" + contacts +
+                ", sections=" + sections +
                 '}';
     }
 

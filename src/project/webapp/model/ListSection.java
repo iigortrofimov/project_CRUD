@@ -1,18 +1,23 @@
 package project.webapp.model;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
 
 public class ListSection implements Section {
-    private final List<String> points;
+    private final List<String> items;
 
-    public ListSection(List<String> points) {
-        Objects.requireNonNull(points, "points must not be null");
-        this.points = points;
+    public ListSection(String... items) {
+        this(Arrays.asList(items));
     }
 
-    public List<String> getPoints() {
-        return points;
+    public ListSection(List<String> items) {
+        Objects.requireNonNull(items, "items must not be null");
+        this.items = items;
+    }
+
+    public List<String> getItems() {
+        return items;
     }
 
     @Override
@@ -22,18 +27,18 @@ public class ListSection implements Section {
 
         ListSection that = (ListSection) o;
 
-        return points.equals(that.points);
+        return items.equals(that.items);
     }
 
     @Override
     public int hashCode() {
-        return points.hashCode();
+        return items.hashCode();
     }
 
     @Override
     public String toString() {
         return "ListSection{" +
-                "points=" + points +
+                "items=" + items +
                 '}';
     }
 }
