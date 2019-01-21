@@ -7,19 +7,19 @@ import java.util.Objects;
 public class ExperienceSection extends Section {
     private static final long serialVersionUID = 1L;
 
-    private final List<Experience> experienceList;
+    private final List<Experience> experiences;
 
-    public ExperienceSection(Experience... experiences){
+    public ExperienceSection(Experience... experiences) {
         this(Arrays.asList(experiences));
     }
 
     public ExperienceSection(List<Experience> experienceList) {
-        Objects.requireNonNull(experienceList, "experienceList must not be null");
-        this.experienceList = experienceList;
+        Objects.requireNonNull(experienceList, "experiences must not be null");
+        this.experiences = experienceList;
     }
 
-    public List<Experience> getExperienceList() {
-        return experienceList;
+    public List<Experience> getExperiences() {
+        return experiences;
     }
 
     @Override
@@ -29,18 +29,17 @@ public class ExperienceSection extends Section {
 
         ExperienceSection that = (ExperienceSection) o;
 
-        return experienceList.equals(that.experienceList);
+        return experiences.equals(that.experiences);
+
     }
 
     @Override
     public int hashCode() {
-        return experienceList.hashCode();
+        return experiences.hashCode();
     }
 
     @Override
     public String toString() {
-        return "ExperienceSection{" +
-                "experienceList=" + experienceList +
-                '}';
+        return experiences.toString();
     }
 }

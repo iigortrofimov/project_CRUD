@@ -26,18 +26,30 @@ public class Experience implements Serializable {
     }
 
     @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Experience that = (Experience) o;
+        return Objects.equals(homePage, that.homePage) &&
+                Objects.equals(positions, that.positions);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(homePage, positions);
+    }
+
+    @Override
     public String toString() {
         return "Experience{" + homePage + " , " + positions + '}';
     }
 
     public static class Position implements Serializable {
-        private static final long serialVersionUID = 1L;
 
-        private final String title;
         private final LocalDate startDate;
         private final LocalDate endDate;
         private final String description;
-
+        private final String title;
 
         public Position(int startYear, Month startMonth, String title, String description) {
             this(DateUtil.of(startYear, startMonth), DateUtil.NOW, title, description);
@@ -77,22 +89,21 @@ public class Experience implements Serializable {
         public boolean equals(Object o) {
             if (this == o) return true;
             if (o == null || getClass() != o.getClass()) return false;
-
             Position position = (Position) o;
-
-            if (!title.equals(position.title)) return false;
-            if (!startDate.equals(position.startDate)) return false;
-            if (!endDate.equals(position.endDate)) return false;
-            return description != null ? description.equals(position.description) : position.description == null;
+            return Objects.equals(startDate, position.startDate) &&
+                    Objects.equals(endDate, position.endDate) &&
+                    Objects.equals(title, position.title) &&
+                    Objects.equals(description, position.description);
         }
 
         @Override
         public int hashCode() {
-            int result = title.hashCode();
-            result = 31 * result + startDate.hashCode();
-            result = 31 * result + endDate.hashCode();
-            result = 31 * result + (description != null ? description.hashCode() : 0);
-            return result;
+            return Objects.hash(startDate, endDate, title, description);
+        }
+
+        @Override
+        public String toString() {
+            return "Position(" + startDate + ',' + endDate + ',' + title + ',' + description + ')';
         }
     }
 }

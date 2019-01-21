@@ -30,6 +30,7 @@ public class ListSection extends Section {
         ListSection that = (ListSection) o;
 
         return items.equals(that.items);
+
     }
 
     @Override
