@@ -1,7 +1,7 @@
 package project.webapp.model;
 
-import project.webapp.unil.DateUtil;
-import project.webapp.unil.LocalDateAdapter;
+import project.webapp.util.DateUtil;
+import project.webapp.util.LocalDateAdapter;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;

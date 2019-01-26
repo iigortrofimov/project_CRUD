@@ -1,7 +1,7 @@
 package project.webapp.storage.serializer;
 
 import project.webapp.model.*;
-import project.webapp.unil.XmlParser;
+import project.webapp.util.XmlParser;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;

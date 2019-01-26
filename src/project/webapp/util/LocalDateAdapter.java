@@ -1,4 +1,4 @@
-package project.webapp.unil;
+package project.webapp.util;
 
 import javax.xml.bind.annotation.adapters.XmlAdapter;
 import java.time.LocalDate;
