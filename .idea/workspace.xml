@@ -2,17 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85e77140-869a-4dd1-ad6c-ab911eb7c0e0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/project/webapp/storage/serializer/JsonStreamSerializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/project/webapp/util/JsonParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/project/webapp/util/JsonSectionAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/project/webapp/storage/JsonPathStorageTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/project/webapp/storage/serializer/DataStreamSerializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/project/webapp/storage/DataPathStorageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CRUD.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CRUD.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/project/webapp/model/Experience.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project/webapp/model/Experience.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/project/webapp/storage/serializer/XmlStreamSerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project/webapp/storage/serializer/XmlStreamSerializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/project/webapp/unil/DateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project/webapp/util/DateUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/project/webapp/unil/LocalDateAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project/webapp/util/LocalDateAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/project/webapp/unil/XmlParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project/webapp/util/XmlParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/project/webapp/model/Link.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project/webapp/model/Link.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/project/webapp/model/Resume.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/project/webapp/model/Resume.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/project/webapp/storage/AllStorageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/project/webapp/storage/AllStorageTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -34,27 +29,27 @@
         <counts>
           <entry key="gitignore" value="1" />
           <entry key="iml" value="2" />
-          <entry key="java" value="155" />
+          <entry key="java" value="162" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="IDEA_MODULE" value="2" />
-          <entry key="JAVA" value="155" />
+          <entry key="JAVA" value="162" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="19" />
-          <entry key="java" value="2878" />
-          <entry key="txt" value="262" />
+          <entry key="java" value="2941" />
+          <entry key="txt" value="276" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2878" />
-          <entry key="PLAIN_TEXT" value="281" />
+          <entry key="JAVA" value="2941" />
+          <entry key="PLAIN_TEXT" value="295" />
         </counts>
       </usages-collector>
     </session>
@@ -62,52 +57,16 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/project/webapp/util/LocalDateAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/project/webapp/util/JsonParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="101">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            <state relative-caret-position="16">
+              <caret line="11" column="37" lean-forward="true" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#289#290#0" expanded="true" />
                 <element signature="e#340#341#0" expanded="true" />
                 <element signature="e#401#402#0" expanded="true" />
                 <element signature="e#444#445#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/project/webapp/util/JsonSectionAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/project/webapp/storage/AllStorageTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
-              <caret line="15" column="27" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -127,10 +86,29 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/project/webapp/storage/PathStorage.java">
+        <entry file="file://$PROJECT_DIR$/src/project/webapp/model/Resume.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
+            <state relative-caret-position="-421">
+              <caret line="48" column="33" selection-start-line="48" selection-start-column="33" selection-end-line="48" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1392#1393#0" expanded="true" />
+                <element signature="e#1445#1446#0" expanded="true" />
+                <element signature="e#1476#1477#0" expanded="true" />
+                <element signature="e#1530#1531#0" expanded="true" />
+                <element signature="e#1561#1562#0" expanded="true" />
+                <element signature="e#2011#2012#0" expanded="true" />
+                <element signature="e#2082#2083#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/project/webapp/storage/serializer/DataStreamSerializer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="118" column="39" selection-start-line="118" selection-start-column="39" selection-end-line="118" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -138,23 +116,24 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/project/webapp/storage/serializer/JsonStreamSerializer.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/project/webapp/storage/DataPathStorageTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+            <state relative-caret-position="68">
+              <caret line="4" column="32" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="32" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#129#130#0" expanded="true" />
+                <element signature="e#226#227#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/project/webapp/storage/serializer/ObjectStreamSerializer.java">
+        <entry file="file://$PROJECT_DIR$/test/project/webapp/storage/AllStorageTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="12" column="36" lean-forward="true" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+            <state relative-caret-position="340">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -175,10 +154,42 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/project/webapp/storage/serializer/XmlStreamSerializer.java">
+        <entry file="file://$PROJECT_DIR$/src/project/webapp/model/Link.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-153">
-              <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+            <state relative-caret-position="833">
+              <caret line="53" column="5" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1230#1231#0" expanded="true" />
+                <element signature="e#1285#1286#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/project/webapp/model/Experience.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-137">
+              <caret line="90" column="69" selection-start-line="90" selection-start-column="69" selection-end-line="90" selection-end-column="69" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1031#1032#0" expanded="true" />
+                <element signature="e#1062#1063#0" expanded="true" />
+                <element signature="e#1106#1107#0" expanded="true" />
+                <element signature="e#1138#1139#0" expanded="true" />
+                <element signature="e#1362#1363#0" expanded="true" />
+                <element signature="e#1418#1419#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/project/webapp/storage/serializer/JsonStreamSerializer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -203,8 +214,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/project/webapp/storage/Storage.java" />
-        <option value="$PROJECT_DIR$/src/project/webapp/storage/MapUuidStorage.java" />
         <option value="$PROJECT_DIR$/src/project/webapp/storage/MapResumeStorage.java" />
         <option value="$PROJECT_DIR$/src/project/webapp/storage/ListStorage.java" />
         <option value="$PROJECT_DIR$/src/project/webapp/storage/ArrayStorage.java" />
@@ -240,24 +249,26 @@
         <option value="$PROJECT_DIR$/src/project/webapp/unil/XmlParser.java" />
         <option value="$PROJECT_DIR$/src/project/webapp/unil/LocalDateAdapter.java" />
         <option value="$PROJECT_DIR$/src/project/webapp/storage/serializer/XmlStreamSerializer.java" />
-        <option value="$PROJECT_DIR$/src/project/webapp/model/Link.java" />
         <option value="$PROJECT_DIR$/src/project/webapp/model/ListSection.java" />
-        <option value="$PROJECT_DIR$/src/project/webapp/model/Experience.java" />
         <option value="$PROJECT_DIR$/src/project/webapp/model/ExperienceSection.java" />
-        <option value="$PROJECT_DIR$/src/project/webapp/model/Resume.java" />
         <option value="$PROJECT_DIR$/src/project/webapp/model/Section.java" />
         <option value="$PROJECT_DIR$/src/project/webapp/model/TextSection.java" />
         <option value="$PROJECT_DIR$/test/project/webapp/storage/XmlPathStorageTest.java" />
         <option value="$PROJECT_DIR$/src/project/webapp/util/XmlParser.java" />
-        <option value="$PROJECT_DIR$/src/project/webapp/util/JsonParser.java" />
         <option value="$PROJECT_DIR$/src/project/webapp/storage/serializer/JsonStreamSerializer.java" />
         <option value="$PROJECT_DIR$/src/project/webapp/util/JsonSectionAdapter.java" />
-        <option value="$PROJECT_DIR$/test/project/webapp/storage/AllStorageTest.java" />
         <option value="$PROJECT_DIR$/test/project/webapp/storage/JsonPathStorageTest.java" />
+        <option value="$PROJECT_DIR$/src/project/webapp/util/JsonParser.java" />
+        <option value="$PROJECT_DIR$/src/project/webapp/model/Resume.java" />
+        <option value="$PROJECT_DIR$/src/project/webapp/model/Link.java" />
+        <option value="$PROJECT_DIR$/src/project/webapp/model/Experience.java" />
+        <option value="$PROJECT_DIR$/src/project/webapp/storage/serializer/DataStreamSerializer.java" />
+        <option value="$PROJECT_DIR$/test/project/webapp/storage/DataPathStorageTest.java" />
+        <option value="$PROJECT_DIR$/test/project/webapp/storage/AllStorageTest.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="20" />
     <option name="width" value="1346" />
     <option name="height" value="688" />
@@ -293,6 +304,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="project" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CRUD" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project_CRUD" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="project" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CRUD" type="b2602c69:ProjectViewProjectNode" />
@@ -356,7 +375,7 @@
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/iigor/Desktop/CRUD/project_CRUD/src/project/webapp/util/XmlParser.java" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548523006199" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548697630581" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Igor/COMP SCIENCE/JAVA/gson-2.8.5.jar!/" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -374,7 +393,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.JsonPathStorageTest">
+  <component name="RunManager" selected="JUnit.DataPathStorageTest">
     <configuration name="AllStorageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CRUD" />
       <extension name="coverage">
@@ -389,6 +408,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DataPathStorageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CRUD" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="project.webapp.storage.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="project.webapp.storage" />
+      <option name="MAIN_CLASS_NAME" value="project.webapp.storage.DataPathStorageTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="JsonPathStorageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="CRUD" />
       <extension name="coverage">
@@ -399,20 +432,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="project.webapp.storage" />
       <option name="MAIN_CLASS_NAME" value="project.webapp.storage.JsonPathStorageTest" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ObjectFileStorageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="CRUD" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="project.webapp.storage.serializer.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="project.webapp.storage" />
-      <option name="MAIN_CLASS_NAME" value="project.webapp.storage.ObjectFileStorageTest" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -447,18 +466,18 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.AllStorageTest" />
-      <item itemvalue="JUnit.ObjectFileStorageTest" />
       <item itemvalue="JUnit.ObjectPathStorageTest" />
       <item itemvalue="JUnit.XmlPathStorageTest" />
       <item itemvalue="JUnit.JsonPathStorageTest" />
+      <item itemvalue="JUnit.DataPathStorageTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DataPathStorageTest" />
         <item itemvalue="JUnit.JsonPathStorageTest" />
         <item itemvalue="JUnit.AllStorageTest" />
         <item itemvalue="JUnit.XmlPathStorageTest" />
         <item itemvalue="JUnit.ObjectPathStorageTest" />
-        <item itemvalue="JUnit.ObjectFileStorageTest" />
       </list>
     </recent_temporary>
   </component>
@@ -550,16 +569,17 @@
       <option name="project" value="LOCAL" />
       <updated>1548519237093</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="add JsonParser 26.01.2019">
+      <created>1548523026708</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1548523026708</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ObjectStreamStorageTest - 2019.01.20 at 23h 52m 44s.xml">
-      <configuration name="ObjectStreamStorageTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ObjectStreamStorageTest - 2019.01.20 at 23h 59m 39s.xml">
-      <configuration name="ObjectStreamStorageTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="AllStorageTest - 2019.01.21 at 00h 03m 16s.xml">
       <configuration name="AllStorageTest" configurationId="JUnit" />
     </history-entry>
@@ -584,16 +604,23 @@
     <history-entry file="JsonPathStorageTest - 2019.01.26 at 20h 13m 50s.xml">
       <configuration name="JsonPathStorageTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="JsonPathStorageTest - 2019.01.26 at 20h 16m 44s.xml">
+      <configuration name="JsonPathStorageTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DataPathStorageTest - 2019.01.28 at 20h 47m 05s.xml">
+      <configuration name="DataPathStorageTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="20" y="0" width="1346" height="688" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
       <window_info id="Designer" />
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2496112" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24281392" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" weight="0.3295082" />
       <window_info anchor="bottom" id="Terminal" weight="0.3295082" />
@@ -601,7 +628,7 @@
       <window_info anchor="bottom" id="Messages" weight="0.3295082" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3295082" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3628159" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3295082" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -629,24 +656,11 @@
     <MESSAGE value="ObjectStreamStorageTest 21.01.2019" />
     <MESSAGE value="Refactoring classes PathStorage, FileStorage 25.01.2019" />
     <MESSAGE value="complete XmlStreamSerializer 26.01.2019" />
-    <option name="LAST_COMMIT_MESSAGE" value="complete XmlStreamSerializer 26.01.2019" />
+    <MESSAGE value="add JsonParser 26.01.2019" />
+    <option name="LAST_COMMIT_MESSAGE" value="add JsonParser 26.01.2019" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test/basejava/project/webapp/storage/AbstractArrayStorageTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="8" selection-start-column="8" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CRUD.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="52" lean-forward="true" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/IllegalArgumentException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -933,22 +947,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/project/webapp/model/Experience.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="93" column="29" selection-start-line="93" selection-start-column="29" selection-end-line="93" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1260#1261#0" expanded="true" />
-            <element signature="e#1316#1317#0" expanded="true" />
-            <element signature="e#1362#1363#0" expanded="true" />
-            <element signature="e#1435#1436#0" expanded="true" />
-            <element signature="e#3265#3266#0" expanded="true" />
-            <element signature="e#3348#3349#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/project/webapp/model/ExperienceSection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="782">
@@ -961,32 +959,6 @@
             <element signature="e#1180#1181#0" expanded="true" />
             <element signature="e#1226#1227#0" expanded="true" />
             <element signature="e#1273#1274#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/project/webapp/model/Link.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/project/webapp/model/Resume.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="82" column="1" selection-start-line="82" selection-start-column="1" selection-end-line="82" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#583#584#0" expanded="true" />
-            <element signature="e#643#644#0" expanded="true" />
-            <element signature="e#2011#2012#0" expanded="true" />
-            <element signature="e#2082#2083#0" expanded="true" />
-            <element signature="e#2048#2049#0" expanded="true" />
-            <element signature="e#2098#2099#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1041,30 +1013,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/project/webapp/storage/serializer/StreamSerializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/project/webapp/storage/serializer/XmlStreamSerializer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-153">
           <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/project/webapp/storage/AllStorageTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="15" column="27" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1081,10 +1033,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/project/webapp/storage/serializer/ObjectStreamSerializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="12" column="36" lean-forward="true" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/project/webapp/util/JsonSectionAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/project/webapp/util/JsonParser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        <state relative-caret-position="16">
+          <caret line="11" column="37" lean-forward="true" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#289#290#0" expanded="true" />
@@ -1106,19 +1078,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/project/webapp/storage/serializer/ObjectStreamSerializer.java">
+    <entry file="file://$PROJECT_DIR$/src/project/webapp/model/Link.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="12" column="36" lean-forward="true" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+        <state relative-caret-position="833">
+          <caret line="53" column="5" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1230#1231#0" expanded="true" />
+            <element signature="e#1285#1286#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/project/webapp/model/Experience.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-137">
+          <caret line="90" column="69" selection-start-line="90" selection-start-column="69" selection-end-line="90" selection-end-column="69" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1031#1032#0" expanded="true" />
+            <element signature="e#1062#1063#0" expanded="true" />
+            <element signature="e#1106#1107#0" expanded="true" />
+            <element signature="e#1138#1139#0" expanded="true" />
+            <element signature="e#1362#1363#0" expanded="true" />
+            <element signature="e#1418#1419#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/project/webapp/model/Resume.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-421">
+          <caret line="48" column="33" selection-start-line="48" selection-start-column="33" selection-end-line="48" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1392#1393#0" expanded="true" />
+            <element signature="e#1445#1446#0" expanded="true" />
+            <element signature="e#1476#1477#0" expanded="true" />
+            <element signature="e#1530#1531#0" expanded="true" />
+            <element signature="e#1561#1562#0" expanded="true" />
+            <element signature="e#2011#2012#0" expanded="true" />
+            <element signature="e#2082#2083#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/project/webapp/storage/serializer/JsonStreamSerializer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
+        <state relative-caret-position="255">
           <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1126,12 +1133,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/project/webapp/util/JsonSectionAdapter.java">
+    <entry file="file://$PROJECT_DIR$/src/project/webapp/storage/serializer/StreamSerializer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        <state relative-caret-position="136">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/project/webapp/storage/serializer/DataStreamSerializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="118" column="39" selection-start-line="118" selection-start-column="39" selection-end-line="118" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/project/webapp/storage/AllStorageTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/project/webapp/storage/DataPathStorageTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="32" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="32" />
+          <folding>
+            <element signature="e#129#130#0" expanded="true" />
+            <element signature="e#226#227#0" expanded="true" />
           </folding>
         </state>
       </provider>
