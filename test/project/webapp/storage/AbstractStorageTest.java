@@ -3,6 +3,7 @@ package project.webapp.storage;
 
 import org.junit.Before;
 import org.junit.Test;
+import project.webapp.Config;
 import project.webapp.exception.ExistStorageException;
 import project.webapp.exception.NotExistStorageException;
 import project.webapp.model.*;
@@ -17,7 +18,7 @@ import static org.junit.Assert.assertEquals;
 
 public abstract class AbstractStorageTest {
 
-    protected static final File STORAGE_DIR = new File("D:\\storage");
+    protected static final File STORAGE_DIR = Config.getInstance().getStorageDir();
 
     protected Storage storage;
 
