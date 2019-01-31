@@ -1,5 +1,7 @@
 package project.webapp.exception;
 
+import java.sql.SQLException;
+
 public class StorageException extends RuntimeException {
     private final String uuid;
 
@@ -19,6 +21,10 @@ public class StorageException extends RuntimeException {
 
     public StorageException(String message) {
         this(message, null, null);
+    }
+
+    public StorageException(SQLException e) {
+        this(e.getMessage(), e);
     }
 
     public String getUuid() {
