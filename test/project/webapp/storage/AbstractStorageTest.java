@@ -6,10 +6,12 @@ import org.junit.Test;
 import project.webapp.Config;
 import project.webapp.exception.ExistStorageException;
 import project.webapp.exception.NotExistStorageException;
+import project.webapp.model.ContactType;
 import project.webapp.model.Resume;
 
 import java.io.File;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 import java.util.UUID;
 
@@ -38,9 +40,11 @@ public abstract class AbstractStorageTest {
         R3 = new Resume(UUID_3, "Name3");
         R4 = new Resume(UUID_4, "Name4");
 
-        /*R1.addContact(ContactType.MAIL, "mail1@ya.ru");
-        R1.addContact(ContactType.TELEPHON, "11111");
-        R1.addSection(SectionType.OBJECTIVE, new TextSection("Objective1"));
+        R1.addContact(ContactType.MAIL, "ii@yandex.ru");
+        R1.addContact(ContactType.TELEPHONE, "76543");
+        R4.addContact(ContactType.TELEPHONE, "345678");
+        R4.addContact(ContactType.SKYPE, "Skype1123");
+        /*R1.addSection(SectionType.OBJECTIVE, new TextSection("Objective1"));
         R1.addSection(SectionType.PERSONAL, new TextSection("Personal data"));
         R1.addSection(SectionType.ACHIEVEMENT, new ListSection("Achivment11", "Achivment12", "Achivment13"));
         R1.addSection(SectionType.QUALIFICATIONS, new ListSection("Java", "SQL", "JavaScript"));
@@ -56,7 +60,7 @@ public abstract class AbstractStorageTest {
                                 new Experience.Position(2001, Month.MARCH, 2005, Month.JANUARY, "student", "IT facultet")),
                         new Experience("Organization12", "http://Organization12.ru")));
         R2.addContact(ContactType.SKYPE, "skype2");
-        R2.addContact(ContactType.TELEPHON, "22222");
+        R2.addContact(ContactType.TELEPHONE, "22222");
         R1.addSection(SectionType.EXPERIENCE,
                 new ExperienceSection(
                         new Experience("Organization2", "http://Organization2.ru",
@@ -74,6 +78,7 @@ public abstract class AbstractStorageTest {
         storage.save(R2);
         storage.save(R3);
     }
+
     @Test
     public void size() throws Exception {
         assertSize(3);
@@ -88,6 +93,9 @@ public abstract class AbstractStorageTest {
     @Test
     public void update() throws Exception {
         Resume newResume = new Resume(UUID_1, "New Name");
+        R1.addContact(ContactType.MAIL, "qwerty@bin.com");
+        R1.addContact(ContactType.SKYPE, "Skype311");
+        R1.addContact(ContactType.TELEPHONE, "+7 921 333333");
         storage.update(newResume);
         assertTrue(newResume.equals(storage.get(UUID_1)));
     }
@@ -101,7 +109,9 @@ public abstract class AbstractStorageTest {
     public void getAllSorted() throws Exception {
         List<Resume> list = storage.getAllSorted();
         assertEquals(3, list.size());
-        assertEquals(list, Arrays.asList(R1, R2, R3));
+        List<Resume> sortedResumes = Arrays.asList(R1, R2, R3);
+        Collections.sort(sortedResumes);
+        assertEquals(sortedResumes, list);
     }
 
     @Test

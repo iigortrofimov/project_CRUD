@@ -1,5 +1,6 @@
 package project.webapp.sql;
 
+
 import project.webapp.exception.StorageException;
 
 import java.sql.Connection;
@@ -7,7 +8,7 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 public class SqlHelper {
-    ConnectionFactory connectionFactory;
+    private final ConnectionFactory connectionFactory;
 
     public SqlHelper(ConnectionFactory connectionFactory) {
         this.connectionFactory = connectionFactory;

@@ -1,7 +1,7 @@
 package project.webapp.model;
 
 public enum ContactType {
-    TELEPHON("Тел.: "),
+    TELEPHONE("Тел.: "),
     SKYPE("Skype: "),
     MAIL("Почта: "),
     LINKEDIN("Профиль LinkedIn"),
