@@ -18,6 +18,11 @@ public class SqlStorage implements Storage {
     public final SqlHelper sqlHelper;
 
     public SqlStorage(String dbUrl, String dbUser, String dbPassword) {
+        try {
+            Class.forName("org.postgresql.Driver");
+        } catch (ClassNotFoundException e) {
+            throw new IllegalStateException(e);
+        }
         sqlHelper = new SqlHelper(() -> DriverManager.getConnection(dbUrl, dbUser, dbPassword));
     }
 
@@ -54,6 +59,7 @@ public class SqlStorage implements Storage {
                     addSection(rs, r);
                 }
             }
+
             return r;
         });
     }
@@ -130,6 +136,7 @@ public class SqlStorage implements Storage {
                     addSection(rs, r);
                 }
             }
+
             return new ArrayList<>(resumes.values());
         });
     }
