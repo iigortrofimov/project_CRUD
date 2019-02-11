@@ -15,7 +15,7 @@ public class SqlHelper {
     }
 
     public void execute(String sql) {
-        execute(sql, PreparedStatement::execute);
+        execute(sql, preparedStatement -> preparedStatement.execute());
     }
 
     public <T> T execute(String sql, SqlExecutor<T> executor) {
