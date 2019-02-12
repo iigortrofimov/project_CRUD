@@ -15,7 +15,12 @@ public class SqlHelper {
     }
 
     public void execute(String sql) {
-        execute(sql, preparedStatement -> preparedStatement.execute());
+        execute(sql, new SqlExecutor<Boolean>() {
+            @Override
+            public Boolean execute(PreparedStatement preparedStatement) throws SQLException {
+                return preparedStatement.execute();
+            }
+        });
     }
 
     public <T> T execute(String sql, SqlExecutor<T> executor) {
